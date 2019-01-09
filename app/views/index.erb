@@ -1,1 +1,10 @@
-test
+<h1>Hero Team Creation</h1>
+
+<form class="" action="/" method="post">
+  <p><label for="">Team Name: </label><input type="text" name="name"></p>
+  <p><label for="">Team Motto: </label><input type="text" name="motto"></p>
+
+  <% 3.times do |i| %>
+    <h2>Hero <%= i + 1 %></h2>
+  <% end %>
+</form>
