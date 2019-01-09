@@ -14,6 +14,6 @@ class Member
   end
 
   def self.clear
-    MEMBERS = []
+    MEMBERS.clear
   end
 end
