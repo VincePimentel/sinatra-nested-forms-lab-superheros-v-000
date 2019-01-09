@@ -5,10 +5,11 @@
   <p><label for="">Team Motto: </label><input type="text" name="team[motto]"></p>
 
   <% 3.times do |i| %>
-    <h2>Hero <%= i + 1 %></h2>
+    i += 1
+    <h2>Hero <%= i %></h2>
     <p>
       <label for="">Name: </label>
-      <input type="text" name="team[members][name]">
+      <input type="text" id="member<%= i %>_" name="team[members][name]">
     </p>
     <p>
       <label for="">Power: </label>
