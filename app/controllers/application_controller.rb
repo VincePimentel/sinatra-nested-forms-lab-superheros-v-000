@@ -8,4 +8,10 @@ class App < Sinatra::Base
       erb :index
     end
 
+    post "/teams" do
+      team = Team.new(params[:team])
+      
+      erb :team
+    end
+
 end
