@@ -9,15 +9,15 @@
     <h2>Hero <%= i %></h2>
     <p>
       <label for="<%= "member#{i}_name" %>">Name: </label>
-      <input type="text" id="<%= "member#{i}_name" %>" name="team[members][name]">
+      <input type="text" id="<%= "member#{i}_name" %>" name="team[members][][name]">
     </p>
     <p>
       <label for="<%= "member#{i}_power" %>">Power: </label>
-      <input type="text" id="<%= "member#{i}_power" %>" name="team[members][power]">
+      <input type="text" id="<%= "member#{i}_power" %>" name="team[members][][power]">
     </p>
     <p>
       <label for="<%= "member#{i}_bio" %>">Biography: </label>
-      <input type="text" id="<%= "member#{i}_bio" %>" name="team[members][bio]">
+      <input type="text" id="<%= "member#{i}_bio" %>" name="team[members][][bio]">
     </p>
   <% end %>
 
