@@ -17,6 +17,8 @@ class App < Sinatra::Base
 
       @members = Member.all
 
+      binding.pry
+
       erb :team
     end
 
