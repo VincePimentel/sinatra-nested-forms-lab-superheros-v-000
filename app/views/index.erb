@@ -8,15 +8,15 @@
     <% i += 1 %>
     <h2>Hero <%= i %></h2>
     <p>
-      <label for="">Name: </label>
+      <label for="<%= "member#{i}_name" %>">Name: </label>
       <input type="text" id="<%= "member#{i}_name" %>" name="team[members][name]">
     </p>
     <p>
-      <label for="">Power: </label>
+      <label for="<%= "member#{i}_power" %>">Power: </label>
       <input type="text" id="<%= "member#{i}_power" %>" name="team[members][power]">
     </p>
     <p>
-      <label for="">Biography: </label>
+      <label for="<%= "member#{i}_bio" %>">Biography: </label>
       <input type="text" id="<%= "member#{i}_bio" %>" name="team[members][bio]">
     </p>
   <% end %>
