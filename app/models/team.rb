@@ -1,7 +1,7 @@
 class Team
   attr_reader :name, :motto
 
-  TEAM = Array.new
+  TEAMS = Array.new
 
   def initialize(params)
     @name = params[:name]
@@ -9,6 +9,6 @@ class Team
   end
 
   def self.all
-    TEAM
+    TEAMS
   end
 end
